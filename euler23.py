@@ -1,6 +1,6 @@
 __author__ = 'TwoZer0Nine'
 import math, time
-# result 4179871 returned in 9.68146109581 seconds
+# result 4179871 returned in 8.96733498573 seconds
 
 
 def factors(n):
@@ -28,14 +28,13 @@ for i in xrange(0, len(lst)):
 lst2.sort()
 lst2 = list(set(lst2))
 result = 0
+for e in xrange(0, 24):
+    result += e
 
 for i in xrange(0, len(lst2) - 1):
-    if i == 0:
-        for e in xrange(0, lst2[i]):
-            result += e
     if lst2[i] < 28123:
-        for e in xrange(lst2[i]+1, lst2[i+1]):
-            result += e
+        for j in xrange(lst2[i]+1, lst2[i+1]):
+            result += j
 
 elapsed = time.time() - start
 print "result %s returned in %s seconds" % (result, elapsed)
