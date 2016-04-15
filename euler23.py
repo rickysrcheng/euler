@@ -20,7 +20,7 @@ for i in xrange(1, 28124):
 for i in xrange(0, len(lst)):
     for j in xrange(i, len(lst)):
         n = lst[i] + lst[j]
-        if n < 30000:
+        if n < 28124:
             lst2.append(n)
         else:
             break
