@@ -34,12 +34,20 @@ import time
 #
 
 start = time.time()
+# for i in xrange(3, 101):
+#     maximum = i*(i-2) if i % 2 == 0 else i*(i-1)
+#     result += maximum
+#     x.append(i)
+#     y.append(float(maximum)/float(i**2))
 
-result = 0
-for i in xrange(3, 1001):
-    if i % 2 == 0:
-        result += i*(i-2)
-    else:
-        result += i * (i-1)
+
+# one liner
+result = sum([i * (i-2) if i % 2 == 0 else i * (i-1) for i in xrange(3, 1001)])
 
 print "result %s returned in %s seconds" % (result, time.time()-start)
+
+# plt.plot(x, y)
+# plt.xlabel('Number')
+# plt.ylabel('Ratio')
+# plt.grid(True)
+# plt.show()
