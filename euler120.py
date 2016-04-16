@@ -1,5 +1,5 @@
 __author__ = 'TwoZer0Nine'
-# result 333082500 returned in 0.000453948974609 seconds
+# result 333082500 returned in 0.000331878662109 seconds
 
 import time
 # import matplotlib.pyplot as plt
