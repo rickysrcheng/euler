@@ -55,6 +55,8 @@ start = time.time()
 #     num += 1
 #     lst = increment(lst)
 
+# swapped it around, so instead of looping n
+# i'm looping the base and exponent
 lst = []
 x = 5
 while len(lst) != 40:
