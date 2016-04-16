@@ -1,11 +1,14 @@
 __author__ = 'TwoZer0Nine'
+# result 1587000 returned in 4.269562006 seconds
+
+
 import time
 
 
 def bouncy(n):
     lst = []
     inc = False
-    dec = True
+    dec = False
     while n >= 10:
         lst.append(n % 10)
         n /= 10
