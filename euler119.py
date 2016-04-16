@@ -1,5 +1,5 @@
 __author__ = 'TwoZer0Nine'
-# result 248155780267521 returned in 0.0361828804016 seconds
+# result 248155780267521 returned in 0.00688505172729 seconds
 
 import time
 
@@ -61,12 +61,10 @@ while len(lst) != 40:
     a = 2
     while a < 15:
         num = x**a
-        #print x, a, num, digit_sum(num)
         if x == digit_sum(num):
             lst.append(x**a)
-            print "%s^%s = %s %s" % (x, a, num, time.time() - start)
+            # print "%s^%s = %s %s" % (x, a, num, time.time() - start)
         a += 1
     x += 1
 lst.sort()
-print lst
 print "result %s returned in %s seconds" % (lst[29], time.time() - start)
