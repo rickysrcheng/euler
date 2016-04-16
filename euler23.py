@@ -4,7 +4,7 @@ import math, time
 
 
 def factors(n):
-    return list(set(reduce(list.__add__, ([i, n//i] for i in range(1, int(math.sqrt(i)) + 1) if n % i == 0))))
+    return list(set(reduce(list.__add__, ([i, n//i] for i in range(1, int(math.sqrt(n)) + 1) if n % i == 0))))
 
 start = time.time()
 
