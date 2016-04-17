@@ -24,6 +24,7 @@ def miller_rabin(n, witness): # false if composite
 def is_prime_miller_rabin(n):
     return n in [2, 3, 5] or all(miller_rabin(n, w) for w in [2, 3, 5])
 
+
 def primes(n): # sieve of eratosthenes
     ps, sieve = [], [True] * (n + 1)
     for p in range(2, n + 1):
