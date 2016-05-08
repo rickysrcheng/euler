@@ -4,29 +4,6 @@ __author__ = 'TwoZer0Nine'
 import time
 
 
-def increment(lst):
-    lst[0] += 1
-    for i in xrange(0, len(lst)):
-        if lst[i] == 10:
-            lst[i] = 0
-            if i == len(lst) - 1:
-                lst.append(1)
-            else:
-                lst[i+1] += 1
-        else:
-            return lst
-    return lst
-
-
-def make_list(n):
-    lst = []
-    while n >= 10:
-        lst.append(n % 10)
-        n /= 10
-    lst.append(n)
-    return lst
-
-
 def digit_sum(n):
     digit_sum = 0
     while n > 0:
