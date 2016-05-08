@@ -3,6 +3,7 @@ __author__ = 'TwoZer0Nine'
 
 import time
 
+
 def increment(lst):
     lst[0] += 1
     for i in xrange(0, len(lst)):
@@ -24,6 +25,7 @@ def make_list(n):
         n /= 10
     lst.append(n)
     return lst
+
 
 def digit_sum(n):
     digit_sum = 0
