@@ -6,11 +6,11 @@ import math, time
 
 def primes(n): # sieve of eratosthenes
     ps, sieve = [], [True] * (n + 1)
-    for p in range(2, n + 1):
-        if sieve[p]:
-            ps.append(p)
-            for i in range(p * p, n + 1, p):
-                sieve[i] = False
+    for i in range(2, n + 1):
+        if sieve[i]:
+            ps.append(i)
+            for j in range(i * i, n + 1, i):
+                sieve[j] = False
     return ps
 
 
@@ -18,7 +18,6 @@ def factor(p, q, s):
     pe = 1
     maximum = 0
     ps = 0
-    qs = 0
     while ps * q <= s:
         ps = p**pe
         qe = 1
