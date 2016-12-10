@@ -1,7 +1,6 @@
 # result 1389019170 returned in 9.88262605667 seconds
 import time
 
-
 start = time.time()
 n = 101010101
 count = 0
