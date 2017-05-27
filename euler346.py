@@ -1,4 +1,6 @@
 __author__ = 'TwoZer0Nine'
+# Result 336108797689259276 returned in 2.59442901611 seconds.
+
 
 from math import log, sqrt
 import time
@@ -56,8 +58,6 @@ for i in xrange(3, tmp + 1):
                 result += num
         else:
             break
-
-# print len(lst)
 
 for i in lst:
     if base2int("11", i - 1) == i:
